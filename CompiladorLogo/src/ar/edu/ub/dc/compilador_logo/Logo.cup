@@ -1,0 +1,21 @@
+package ar.edu.ub.dc.compilador_logo;
+
+import java_cup.runtime.*;
+
+terminal comienza, norte, sur, este, oeste;
+
+non terminal sec, instr;
+
+start with sec;
+
+sec ::= comienza;
+
+sec ::= sec instr;
+
+instr ::= norte;
+
+instr ::= sur;
+
+instr ::= este;
+
+instr ::= oeste;
