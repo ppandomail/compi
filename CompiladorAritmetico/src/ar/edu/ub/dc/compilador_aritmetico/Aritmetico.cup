@@ -4,7 +4,7 @@ import java_cup.runtime.*;
 
 
 /* Terminales sin atributo */
-terminal PUNTOYCOMA, MAS, MENOS, POR, ENTRE, MODULO;
+terminal PUNTOYCOMA, MAS, MENOS, POR, DIVISION, MODULO;
 terminal LPAREN, RPAREN;
 
 /* Terminales con atributo asociado */
@@ -18,7 +18,7 @@ non terminal Integer expr;
 
 /* Precedencias */
 precedence left MAS, MENOS;
-precedence left POR, ENTRE, MODULO;
+precedence left POR, DIVISION, MODULO;
 
 /* Gramática */
 lista_expr ::= lista_expr expr:e PUNTOYCOMA 
@@ -34,7 +34,7 @@ expr ::= expr:e1 MAS expr:e2
 		{: RESULT = new Integer(e1.intValue() - e2.intValue()); :}
 		| expr:e1 POR expr:e2
 		{: RESULT = new Integer(e1.intValue() * e2.intValue()); :}
-		| expr:e1 ENTRE expr:e2
+		| expr:e1 DIVISION expr:e2
 		{: RESULT = new Integer(e1.intValue() / e2.intValue()); :}
 		| expr:e1 MODULO expr:e2
 		{: RESULT = new Integer(e1.intValue() % e2.intValue()); :}

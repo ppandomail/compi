@@ -631,7 +631,7 @@ public class Scanner implements java_cup.runtime.Scanner {
           }
         case 16: break;
         case 5: 
-          { return new Symbol(sym.ENTRE);
+          { return new Symbol(sym.DIVISION);
           }
         case 17: break;
         case 6: 

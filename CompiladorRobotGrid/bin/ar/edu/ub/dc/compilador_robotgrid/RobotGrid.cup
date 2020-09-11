@@ -11,7 +11,7 @@ action code
 			else if (instr == 1) 
 					GridMap.turnLeft();
 				 else 
-				 	throw new IllegalArgumentException("forFunc: Intrucción ilegal");
+				 	throw new IllegalArgumentException("forFunc: Instrucción ilegal");
 		}
 	}
 :}
