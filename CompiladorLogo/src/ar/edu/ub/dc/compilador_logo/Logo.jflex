@@ -24,4 +24,6 @@ import java_cup.runtime.Symbol;
 
 "O" {return new Symbol(sym.oeste);}
 
+"F" {return new Symbol(sym.fin);}
+
 . {System.err.println("Caracter Inválido");}
