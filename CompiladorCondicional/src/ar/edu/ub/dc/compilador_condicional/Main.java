@@ -1,4 +1,4 @@
-package ar.edu.ub.dc.compilador_parentesis;
+package ar.edu.ub.dc.compilador_condicional;
 
 import java.io.FileReader;
 

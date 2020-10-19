@@ -8,7 +8,7 @@ public class Main {
 		for (int i = 1; i<=3; i++) {
 			System.out.println("*********** Programa " + i + " ************");
 			try {
-			new Parser(new Scanner(new FileReader("src/ar/edu/ub/dc/compilador_robotgrid/programa" + i + ".txt"))).parse();
+			new Parser(new Scanner(new FileReader("resources/programa" + i + ".txt"))).parse();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
